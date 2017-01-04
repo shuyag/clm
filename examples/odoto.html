@@ -184,7 +184,7 @@
 				var vid = document.getElementById('videoel');
 				var overlay = document.getElementById('overlay');
 				var overlayCC = overlay.getContext('2d');
-				overlayCC.rotate(90*Math.PI/180);
+
 				
 				/********** check and set up video/webcam **********/
 
@@ -259,6 +259,7 @@
 				
 				function drawLoop() {
 					requestAnimFrame(drawLoop);
+					overlayCC.rotate(90*Math.PI/180);
 					overlayCC.clearRect(0, 0, 400, 300);
 					//psrElement.innerHTML = "score :" + ctrack.getScore().toFixed(4);
 					if (ctrack.getCurrentPosition()) {
