@@ -167,19 +167,7 @@
 					startbutton.disabled = null;
 				}
 
-				<script>
-redirectTime = "1500";
-redirectURL = "http://www.quackit.com";
-function timedRedirect() {
-	setTimeout("location.href = redirectURL;",redirectTime);
-}
-</script>
 
-<div style="background-color:#ffcc00;padding:5px;width:100px;cursor:pointer;"
-	onclick="JavaScript:timedRedirect()">
-	Click me for a timed redirect.
-</div>
-				
 				/*var insertAltVideo = function(video) {
 					if (supports_video()) {
 						if (supports_ogg_theora_video()) {
@@ -355,5 +343,17 @@ function timedRedirect() {
 				
 			</script>
 		</div>
+		<script>
+redirectTime = "1500";
+redirectURL = "http://www.quackit.com";
+function timedRedirect() {
+	setTimeout("location.href = redirectURL;",redirectTime);
+}
+</script>
+
+<div style="background-color:#ffcc00;padding:5px;width:100px;cursor:pointer;"
+	onclick="JavaScript:timedRedirect()">
+	Click me for a timed redirect.
+</div>
 	</body>
 </html>
