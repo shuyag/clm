@@ -155,7 +155,7 @@
 			</div>
 			
 			<script>
-			redirectTime = "1500";
+			redirectTime = "5000";
 			redirectURL = "http://www.quackit.com";
 			function timedRedirect() {
 				setTimeout("location.href = redirectURL;",redirectTime);
@@ -172,9 +172,9 @@
 
 				function enablestart() {
 					var startbutton = document.getElementById('startbutton');
-					startbutton.value = "start";
+					startbutton.value = "go";
 					startbutton.disabled = null;
-					startbutton.onclick= timedRedirect();
+					startbutton.onclick= timedRedirect() {enablestart()};
 				}
 
 
