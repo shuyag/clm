@@ -58,6 +58,7 @@
 			
 			h2 {
 				font-weight : 400;
+				text-align: center;
 			}
 			
 			.btn {
@@ -78,6 +79,10 @@
 				height: 100px;
 			}
 
+.title{
+				position: center
+				height: 100px;
+			}
 			#emotion_icons {
 				height: 50px;
 				padding-left: 40px;
@@ -149,13 +154,13 @@
 			<canvas id="sketch" width="400" height="300"></canvas>
 			<div id="emotion_container">
 				<div id="emotion_icons">
-					<img class="emotion_icon" id="icon1" src="./media/icon_angry.png">
-					<img class="emotion_icon" id="icon2" src="./media/icon_sad.png">
-					<img class="emotion_icon" id="icon3" src="./media/icon_surprised.png">
-					<img class="emotion_icon" id="icon4" src="./media/icon_happy.png">
+					<img class="emotion_icon" id="icon1" src="media/icon_angry.png">
+					<img class="emotion_icon" id="icon2" src="media/icon_sad.png">
+					<img class="emotion_icon" id="icon3" src="media/icon_surprised.png">
+					<img class="emotion_icon" id="icon4" src="media/icon_happy.png">
 				</div>
 				<div id='emotion_chart'>
-				<svg width="400" height="100"><rect x="40" y="70" height="0" width="30" fill="#2d578b"></rect><rect x="125" y="70" height="0" width="30" fill="#2d578b"></rect><rect x="210" y="70" height="0" width="30" fill="#2d578b"></rect><rect x="295" y="70" height="0" width="30" fill="#2d578b"></rect><text x="70" y="70" dx="-15" dy="1.2em" text-anchor="middle" fill="white" class="labels">0</text><text x="155" y="70" dx="-15" dy="1.2em" text-anchor="middle" fill="white" class="labels">0</text><text x="240" y="70" dx="-15" dy="1.2em" text-anchor="middle" fill="white" class="labels">0</text><text x="325" y="70" dx="-15" dy="1.2em" text-anchor="middle" fill="white" class="labels">0</text><img class="emotion_icon" id="icon1" src="./media/icon_angry.png"> <text x="70" y="70" dx="-15" text-anchor="middle" style="font-size: 12" transform="translate(0, 18)" class="yAxis">angry</text><text x="155" y="70" dx="-15" text-anchor="middle" style="font-size: 12" transform="translate(0, 18)" class="yAxis">sad</text><text x="240" y="70" dx="-15" text-anchor="middle" style="font-size: 12" transform="translate(0, 18)" class="yAxis">surprised</text><text x="325" y="70" dx="-15" text-anchor="middle" style="font-size: 12" transform="translate(0, 18)" class="yAxis">happy</text></svg></div>
+				</div>
 			</div>
 			<div id="controls">
 				<input class="btn" type="button" value="wait, loading video" disabled="disabled" onclick="startVideo()" id="startbutton"></input>
